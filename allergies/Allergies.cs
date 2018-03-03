@@ -21,13 +21,7 @@ public class Allergies
 
     public bool IsAllergicTo(string allergy)
     {
-        if (_allergies.Contains(allergy))
-        {
-            return true;
-        }
-
-        return false;
-
+        return (_allergies.Contains(allergy));
     }
 
     public IList<string> List()
