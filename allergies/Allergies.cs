@@ -26,7 +26,8 @@ public class Allergies
 
     public IList<string> List()
     {
-        return _allergies;
+        List<string> allergyList = new List<string>(_allergies);
+        return allergyList;
     }
 
     public static Dictionary<string, int> AllergyList = new Dictionary<string, int>()
